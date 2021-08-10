@@ -62,7 +62,7 @@
 
           if (!initialHeight) initialHeight = window.innerHeight
 
-          if (!wasRotation && initialHeight !== window.innerHeight) {
+          if (initialHeight !== window.innerHeight) {
             document.body.classList.add('fullscreen');
           } else {
             document.body.classList.remove('fullscreen');
